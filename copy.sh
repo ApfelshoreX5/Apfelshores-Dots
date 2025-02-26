@@ -41,7 +41,7 @@ if grep -iq '^\(ID_LIKE\|ID\)=.*\(debian\|ubuntu\)' /etc/os-release >/dev/null 2
 	printf "\n%.0s" {1..1}
     print_color $WARNING "
     █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-                 KOOL DOTS version INCOMPATIBLE
+                 APFELS DOTS version INCOMPATIBLE
     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
     Debian / Ubuntu detected. Refer to Hyprland-Dots README
@@ -56,19 +56,9 @@ fi
 
 printf "\n%.0s" {1..1}  
 echo -e "\e[35m
-    ╦╔═┌─┐┌─┐╦    ╔╦╗┌─┐┌┬┐┌─┐
-    ╠╩╗│ ││ │║     ║║│ │ │ └─┐ 2025
-    ╩ ╩└─┘└─┘╩═╝  ═╩╝└─┘ ┴ └─┘
+  Apfelshores-Dots installation
 \e[0m"
 printf "\n%.0s" {1..1}  
-
-####### Announcement
-echo "${WARNING}A T T E N T I O N !${RESET}"
-echo "${SKY_BLUE}This version (v2.3.12) requires nwg-displays and some fonts!${RESET}"
-echo "${SKY_BLUE}If you ran through (Distro-Hyprland install scripts), no need to do anything${RESET}"
-echo "${YELLOW}previous version: Some Keybinds changes${RESET}"
-echo "${MAGENTA}Kindly visit KooL Hyprland Own Wiki for changelogs${RESET}"
-printf "\n%.0s" {1..1}
 
 # Create Directory for Copy Logs
 if [ ! -d Copy-Logs ]; then
