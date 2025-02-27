@@ -16,7 +16,7 @@ fi
 # Launch yad with calculated width and height
 GDK_BACKEND=$BACKEND yad \
     --center \
-    --title="KooL Quick Cheat Sheet" \
+    --title="Apfel's Quick Cheat Sheet" \
     --no-buttons \
     --list \
     --column=Key: \
@@ -25,7 +25,7 @@ GDK_BACKEND=$BACKEND yad \
     --timeout-indicator=bottom \
 "ESC" "close this app" "" " = " "SUPER KEY (Windows Key Button)" "(SUPER KEY)" \
 " SHIFT K" "Searchable Keybinds" "(Search all Keybinds via rofi)" \
-" SHIFT E" "KooL Hyprland Settings Menu" "" \
+" SHIFT E" "Apfel Hyprland Settings Menu" "" \
 "" "" "" \
 " enter" "Terminal" "(kitty)" \
 " SHIFT enter" "DropDown Terminal" "(Not available in Debian and Ubuntu)" \
@@ -70,4 +70,3 @@ GDK_BACKEND=$BACKEND yad \
 " ALT V" "Clipboard Manager" "cliphist" \
 " H" "Launch this Quick Cheat Sheet" "" \
 "" "" "" \
-"More tips:" "https://github.com/JaKooLit/Hyprland-Dots/wiki" ""\

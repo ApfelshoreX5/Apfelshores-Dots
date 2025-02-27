@@ -15,8 +15,8 @@ RESET=$(tput sgr0)
 
 printf "${NOTE} Downloading / Checking for existing Apfelshores-Dots.tar.gz...\n"
 
-# Check if Hyprland-Dots.tar.gz exists
-if [ -f Hyprland-Dots.tar.gz ]; then
+# Check if Apfelshores-Dots.tar.gz exists
+if [ -f Apfelshores-Dots.tar.gz ]; then
   printf "${NOTE} Apfelshores-Dots.tar.gz found.\n"
 
   # Get the version from the existing tarball filename
@@ -39,10 +39,10 @@ if [ -f Hyprland-Dots.tar.gz ]; then
     if [ "$upgrade_choice" = "y" ]; then
 		echo -e "${NOTE} Proceeding to download the latest release."
 		
-		# Delete existing directories starting with JaKooLit-Hyprland-Dots
-      find . -type d -name 'Apfelshores-Hyprland-Dots*' -exec rm -rf {} +
+		# Delete existing directories starting with Apfelshores-Dots
+      find . -type d -name 'Apfelshores-Dots*' -exec rm -rf {} +
       rm -f Apfelshores-Dots.tar.gz
-      printf "${WARN} Removed existing Hyprland-Dots.tar.gz.\n"
+      printf "${WARN} Removed existing Apfelshores-Dots.tar.gz.\n"
     else
       echo -e "${NOTE} User chose not to upgrade. Exiting..."
       exit 0
@@ -78,13 +78,13 @@ if curl -L "$latest_tarball_url" -o "$file_name"; then
   # Extract the contents of the tarball
   tar -xzf "$file_name" || exit 1
 
-  # delete existing Hyprland-Dots
+  # delete existing Apfelshores-Dots
   rm -rf Apfelshores-Dots
 
   # Identify the extracted directory
   extracted_directory=$(tar -tf "$file_name" | grep -o '^[^/]\+' | uniq)
 
-  # Rename the extracted directory to JaKooLit-Hyprland-Dots
+  # Rename the extracted directory to Apfelshores-Dots
   mv "$extracted_directory" Apfelshores-Dots || exit 1
 
   cd "Apfelshores-Dots" || exit 1
