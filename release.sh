@@ -79,15 +79,15 @@ if curl -L "$latest_tarball_url" -o "$file_name"; then
   tar -xzf "$file_name" || exit 1
 
   # delete existing Hyprland-Dots
-  rm -rf Apfelshores-Hyprland-Dots
+  rm -rf Apfelshores-Dots
 
   # Identify the extracted directory
   extracted_directory=$(tar -tf "$file_name" | grep -o '^[^/]\+' | uniq)
 
   # Rename the extracted directory to JaKooLit-Hyprland-Dots
-  mv "$extracted_directory" Apfelshores-Hyprland-Dots || exit 1
+  mv "$extracted_directory" Apfelshores-Dots || exit 1
 
-  cd "Apfelshores-Hyprland-Dots" || exit 1
+  cd "Apfelshores-Dots" || exit 1
 
   # Set execute permission for copy.sh and execute it
   chmod +x copy.sh

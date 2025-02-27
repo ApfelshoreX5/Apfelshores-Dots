@@ -45,7 +45,7 @@ if grep -iq '^\(ID_LIKE\|ID\)=.*\(debian\|ubuntu\)' /etc/os-release >/dev/null 2
     █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
 
     Debian / Ubuntu detected. Refer to Hyprland-Dots README
-    For instruction on how to update your KooL Hyprland Dots
+    For instruction on how to update your Apfelshores-Dots
 
     exiting ....
     "
@@ -277,7 +277,7 @@ printf "\n"
 
 # Action to do for better appearance
 while true; do
-  echo "${NOTE} ${SKY_BLUE} By default, KooL's Dots are configured for 1440p or 2k."
+  echo "${NOTE} ${SKY_BLUE} By default, Apfelshores-Dots are configured for 1440p or 2k."
   echo "${WARN} If you dont select proper resolution, Hyprlock will look FUNKY!"
   echo "${INFO} If you are not sure what is your resolution, choose 1 here!"
   echo "${MAGENTA}Select monitor resolution to properly configure appearance and fonts:"
@@ -328,7 +328,7 @@ printf "\n%.0s" {1..1}
 
 # Ask whether to change to 12hr format
 while true; do
-    echo -e "${NOTE} ${SKY_BLUE} By default, KooL's Dots are configured in 24H clock format."
+    echo -e "${NOTE} ${SKY_BLUE} By default, Apfelshores-Dots are configured in 24H clock format."
     read -p "$CAT Do you want to change to 12H format or AM/PM format? (y/n): " answer
 
     # Convert the answer to lowercase for comparison
@@ -708,7 +708,7 @@ fi
 if [ -d "$BACKUP_DIR_PATH" ]; then
   echo -e "${NOTE} Restoring previous ${MAGENTA}User-Configs${RESET}... "
   echo -e "${WARN} ${WARNING}If you decide to restore the old configs, make sure to handle the updates or changes manually${RESET}."
-  echo -e "${INFO} Kindly Visit and check KooL's Hyprland-Dots GitHub page for the history of commits."
+  echo -e "${INFO} Kindly Visit and check Apfelshores-Dots GitHub page for the history of commits."
 
   for FILE_NAME in "${FILES_TO_RESTORE[@]}"; do
     BACKUP_FILE="$BACKUP_DIR_PATH/$FILE_NAME"
@@ -992,9 +992,9 @@ printf "\n%.0s" {1..1}
 wallust run -s $wallpaper 2>&1 | tee -a "$LOG"
 
 printf "\n%.0s" {1..2}
-printf "${OK} GREAT! KooL's Hyprland-Dots is now Loaded & Ready !!! "
+printf "${OK} GREAT! Apfelshores-Dots is now Loaded & Ready !!! "
 printf "\n%.0s" {1..1}
 printf "${INFO} However, it is ${MAGENTA}HIGHLY SUGGESTED${RESET} to logout and re-login or better reboot to avoid any issues"
 printf "\n%.0s" {1..1}
-printf "${SKY_BLUE}Thank you${RESET} for using ${MAGENTA}KooL's Hyprland Configuration${RESET}... ${YELLOW}ENJOY!!!${RESET}"
+printf "${SKY_BLUE}Thank you${RESET} for using ${MAGENTA}Apfels Hyprland Configuration${RESET}... ${YELLOW}ENJOY!!!${RESET}"
 printf "\n%.0s" {1..3}
